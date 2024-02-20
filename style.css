@@ -1,0 +1,394 @@
+
+/* GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: rgb(208, 241, 244);;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px ;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #fb6ba5ad;
+    transform: scale(1.05);
+}
+
+h2.titulo{
+    color: #fb6ba4;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: black;
+}
+
+
+/* CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+    background-color: rgb(174, 238, 243);
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color:#fb6ba4;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+display: inline-block;
+padding: 0 40px;
+}
+
+/* ESTILO TOPO */
+section.topo{
+    padding: 40px 4%;
+}
+
+.topo .txt-topo{
+    text-align: justify;
+}
+
+section.topo .flex{
+    align-items: center;
+    justify-content:center ;
+    gap: 90px;
+}
+
+.topo h1{
+    color: #fb6ba4;
+    font-size: 42px;
+}
+
+.topo h1 span{
+    color: black;
+}
+
+.topo .txt-topo p{
+    color: black;
+    margin: 40px 0;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fb6ba4;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.topo .img-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESPECIALIDADES */
+section.especialidades{
+    padding: 80px 4%; 
+    background-color: rgb(174, 238, 243);
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: black;
+    padding: 45px;
+    border-radius: 20px;
+    text-align: justify;
+    margin-top: 45px;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px;
+    color:#fb6ba4;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #fb6ba4;
+
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* SOBRE */
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre.txt-sobre{
+    color: black;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color:#fb6ba4 ;
+    display: block;
+}
+
+.sobre .txt-sobre P{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fb6ba4;
+    font-size: 21px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+
+
+/* PROJETOS LINHA 1 */
+section.portfolio2{
+    padding: 80px 4%; 
+    background-color: rgb(174, 238, 243);
+}
+
+
+.img-port2{
+    width: 360px;
+    height: 460px;
+    background-color: #fb6ba4;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 6s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img-port2 p {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+section.portfolio2 .flex{
+gap: 80px;
+margin-top: 60px;
+
+}
+
+.img-port2:hover{
+    background-position: 100% 100%;
+}
+
+.subtitulo2 span {
+    color: #fb6ba4;
+    margin-top: 5px;
+}
+
+
+
+/* PROJETOS LINHA 2 */
+section.portfolio3{
+    padding: 80px 4%; 
+    background-color: rgb(174, 238, 243);
+}
+
+.img-port3{
+    width: 360px;
+    height: 460px;
+    background-color: #fb6ba4;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 6s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img-port3 p {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+section.portfolio3 .flex{
+gap: 80px;
+margin-top: 50px;
+}
+
+.img-port3:hover{
+    background-position: 100% 100%;
+}
+
+.subtitulo3 span {
+    color: #fb6ba4;
+    margin-top: 5px;
+}
+
+/* FORMULARIO */
+section.formulario{
+    padding: 100px 4%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interface{
+    max-width: 1280 px;
+    margin: 0 auto;
+    padding: 0 4% ;
+}
+
+form{
+    background-color: white;
+    max-width: 900px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+form h2{
+    text-align: center;
+}
+
+form p{
+    text-align: center;
+    margin: 20px 0;
+  
+}
+
+.input-single{
+    position: relative;
+    margin: 30px 0;
+
+}
+
+.input-single label{
+    position:absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #fb6ba4;
+    padding: 5px;
+    font-size: 17px;
+    outline: none;
+}
+
+form .input-single .input:focus ~ label{
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #fb6ba4;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 10px 40px ;
+    border: 0;
+    border-radius: 10px;
+    background-color: #fb6ba4;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-widht: 1000px){
+
+    .flex{
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height:30px;
+    }
+   
+    .menu-desktop,
+    .btn-contato{
+        display: none;
+    }
+}
